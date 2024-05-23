@@ -42,7 +42,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'users',
-
+    'filer',
+    # 'mptt',
+    'easy_thumbnails',
+    'slider',
+    'adminsortable2',
 ]
 
 MIDDLEWARE = [
@@ -85,8 +89,6 @@ DATABASES = {
         'NAME': os.environ.get('DB_NAME'),
         'USER': os.environ.get('DB_USER'),
         'PASSWORD': os.environ.get('DB_PASSWORD'),
-        'HOST': os.environ.get('DB_HOST'),
-        'PORT': '3306',
     }
 }
 
