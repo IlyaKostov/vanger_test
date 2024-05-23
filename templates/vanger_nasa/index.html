@@ -1,0 +1,57 @@
+{% extends 'vanger_nasa/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="agency">
+        <div class="container">
+            <!-- Заголовок и описание -->
+            <div class="agency_header">
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2 text-center">
+                        <h1 class="header montserrat-bold">Космическое агенство</h1>
+                        <p class="descr montserrat-regular">
+                            Национальное управление по аэронавтике и исследованию космического пространства — ведомство, относящееся к федеральному правительству США и подчиняющееся непосредственно президенту США.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Преимущества -->
+            <div id="advantages" class="advantages">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">                        
+                        <div class="row align-items-center">
+                           <div class="col-6 text-center">
+                                <img src="{% static 'image/shuttle_ico.png' %}" alt="shuttle">
+                                <p class="adv_descr montserrat-semibold">Спейс шаттлы - пилотируемые корабли</p>
+                            </div>
+                        
+                            <div class="col-6 text-center">
+                                <img src="{% static 'image/telescope_ico.png' %}" alt="telescope">
+                                <p class="adv_descr montserrat-semibold">Лучшее телескопическое оборудование</p>
+                            </div>
+                        </div>
+                        
+                        <div class="row align-items-center gy-4">
+                            <div class="col-6 text-center p-3">
+                                <img src="{% static 'image/planets_ico.png' %}" alt="planets">
+                                <p class="adv_descr montserrat-semibold">Целимся на Луну и Марс</p>
+                            </div>
+                            <div class="col-6 text-center p-3">
+                                <img src="{% static 'image/medal_ico.png' %}" alt="medal">
+                                <p class="adv_descr montserrat-semibold">Золотая медаль по научным исследованиям</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-5 offset-sm-1">
+                        <img src="{% static 'image/sky_img.jpg' %}" class="img-fluid" alt="sky">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    {% include 'vanger_nasa/slide.html' %}
+
+{% endblock content %}

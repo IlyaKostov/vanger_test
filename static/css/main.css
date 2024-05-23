@@ -1,0 +1,128 @@
+.navbar {
+  height: 90px !important;
+}
+
+
+.navbar-brand img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+
+  @media (max-width: 440px) {
+    width: 80px;
+  }
+}
+
+.button {
+  width: 88px;
+  height: 44px;
+  background-color: #FF342B;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+}
+
+.agency_header {
+  margin-top: 90px;
+}
+
+.header {
+  font-size: 56px;
+  letter-spacing: 0.02em;
+
+  @media (max-width: 440px) {
+    font-size: 36px;
+  }
+}
+
+.descr {
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+}
+
+.advantages {
+  margin-top: 90px;
+  padding-bottom: 90px;
+}
+
+.adv_descr {
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+}
+
+.photos {
+  background-color: #3c3c3c;
+  padding-top: 90px;
+  padding-bottom: 40px;
+
+  @media (max-width: 440px) {
+    padding-top: 60px;
+  }
+}
+
+.photos_subheader {
+  color: white;
+  font-size: 42px;
+  line-height: 52px;
+  letter-spacing: 0.02em;
+
+  @media (max-width: 440px) {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+.slider {
+  margin-top: 60px;
+}
+
+.slider-nav {
+  margin-top: 30px;
+}
+
+.slider-for img {
+  z-index: 1;
+  width: 750px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 40px;
+  margin: 0 auto;
+
+  @media (max-width: 440px) {
+    width: 340px;
+    height: 340px;
+  }
+}
+
+.slider-nav img {
+  object-fit: cover;
+  border-radius: 50px;
+
+  @media (max-width: 440px) {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+  }
+}
+
+.slider-nav .slick-prev, .slider-nav .slick-next {
+  background: #3c3c3c;
+  border: none;
+  color: whitesmoke;
+  padding: 10px 20px;
+  position: absolute;
+  top: 50%;
+}
+
+.slider-nav .slick-prev {
+  left: -45px;
+}
+
+.slider-nav .slick-next {
+  right: -45px;
+}

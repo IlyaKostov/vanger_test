@@ -8,6 +8,8 @@ class Slide(models.Model):
 
     class Meta:
         ordering = ['id']
+        verbose_name = 'Слайд'
+        verbose_name_plural = 'Слайды'
 
     def __str__(self):
         return self.title

@@ -1,0 +1,36 @@
+{% load my_tags %}
+{% load static %}
+
+    <!-- Основной слайдер -->
+    {% if slides %}
+    <div id="photos" class="photos">
+        <div class="container">
+          <h2 class="photos_subheader montserrat-bold text-center">Фотографии</h2>
+          <div class="slider">
+            <div class="slider-for">
+                {% for slide in slides %}
+                <div>
+                    <a href="{{ slide.image.url }}" data-fancybox="gallery" data-caption="{{ slide.title }}">
+                        <img src="{{ slide.image.url }}" alt="{{ slide.title }}">
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="slider-nav">
+                {% for slide in slides %}
+                    <div><img src="{{ slide.image|small_image_url }}" alt="{{ slide.title }}"></div>
+                    <button class="slick-prev">Previous</button>
+                    <button class="slick-next">Next</button>
+                {% endfor %}
+            </div>
+          </div>
+        </div>        
+    </div>
+    {% else %}
+    <div id="photo" class="photos">
+        <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+            <h2>Загрузите фотографии в слайдер, используя админ-панель!</h2>
+        </div>
+    </div>
+    {% endif %}
