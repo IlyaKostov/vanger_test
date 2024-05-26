@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'users',
     'filer',
-    # 'mptt',
     'easy_thumbnails',
     'slider',
     'adminsortable2',
